@@ -11,9 +11,10 @@ class Ustack
   end
 
   def run(env={})
+    app = nil
     @ustack.reverse.each do |(klass, options)|
-      @app = options ? klass.new(@app, options) : klass.new(@app)
+      app = options ? klass.new(app, options) : klass.new(app)
     end
-    @app.call(env)
+    app.call(env)
   end
 end
