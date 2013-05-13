@@ -6,12 +6,12 @@ class Ustack
   end
 
   def use(klass, options=nil)
-    @stack ||= []
-    @stack << [klass, options]
+    @ustack ||= []
+    @ustack << [klass, options]
   end
 
   def run(env={})
-    @stack.reverse.each do |(klass, options)|
+    @ustack.reverse.each do |(klass, options)|
       @app = options ? klass.new(@app, options) : klass.new(@app)
     end
     @app.call(env)
