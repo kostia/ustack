@@ -9,7 +9,7 @@ Micro middleware stack for general purpose.
 gem 'ustack'
 ```
 
-## Usage
+## Basic usage
 
 ```ruby
 class M1 < Struct.new(:app)
@@ -34,12 +34,14 @@ app = Ustack.new do
 end
 
 puts app.run
-  # => M1
-  # => M2
-  # => xxx
-  # => M1
-  # => zzz
+# => M1
+# => M2
+# => xxx
+# => M1
+# => zzz
 ```
+
+You can also `swap`, `insert_before` and `insert_after` middleware. See documentation for details.
 
 ## Contributing
 

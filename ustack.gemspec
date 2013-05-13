@@ -13,6 +13,8 @@ Gem::Specification.new do |gem|
   gem.authors = ['Kostiantyn Kahanskyi']
   gem.email = %w[kostiantyn.kahanskyi@googlemail.com]
   gem.files = Dir['lib/**/*'] + %w[Rakefile README.md]
+  gem.add_development_dependency 'pry'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'yard'
 end
