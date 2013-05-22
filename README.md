@@ -1,5 +1,7 @@
 # Ustack
 
+[![Build Status](https://travis-ci.org/kostia/ustack.png)](https://travis-ci.org/kostia/ustack)
+
 ```
 +----------------+
 | +------------+ |
