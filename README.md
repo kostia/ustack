@@ -1,6 +1,7 @@
 # Ustack
 
 [![Build Status](https://travis-ci.org/kostia/ustack.png)](https://travis-ci.org/kostia/ustack)
+[![Code Climate](https://codeclimate.com/github/kostia/ustack.png)](https://codeclimate.com/github/kostia/ustack)
 
 ```
 +----------------+
