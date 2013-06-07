@@ -138,7 +138,7 @@ class Ustack
   #
   #   app = Ustack do
   #     use M1
-  #     use m2
+  #     use M2
   #   end
   #
   #   puts app.run(my_env_key: 'xxx')
